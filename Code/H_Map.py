@@ -15,10 +15,9 @@ from collections import defaultdict
 import scipy
 import pylab
 import rf_dist 
-import triplets
-import quar_color
-import quartets_co
-import My_kenCo
+import T_dist
+import Q_dist
+import KC_dist
 import scipy.cluster.hierarchy as sch
 import matplotlib.pyplot as plt
 
@@ -59,14 +58,14 @@ tree1=[]
 tree2=[]
 dist=[]
 #Open and retrive trees in test file
-with open("trees_newick_test.txt") as f:
+with open("Random_200.txt") as f:
     for line in f:
          array.append(line.replace('\n', ''))
 
 n_samples = len(array)
 seed = np.random.RandomState(seed=2)
 
-#create a set of Gaussians in a grid of mean (-1.5,1.5) and standard devaition (0.2,5)
+
 trees=[]
 tempSim=[]
 
@@ -79,7 +78,7 @@ names=[]
 for i in range (0,len(array)):
     names.append(str(i))
     for j in range (len(array)):
-        D[i,j] = triplets.main(array[i], array[j])
+        D[i,j] = KC_dist.main(array[i], array[j],0)
 #Call main to print corresponding Heatmap
 main(D)
 

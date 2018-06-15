@@ -12,11 +12,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pylab
 import rf_dist 
-import triplets
+import T_dist
 import pylab
-import quar_color
-import quartets_co
-import My_kenCo
+import Q_dist
+import KC_dist
+
 
 
 
@@ -43,7 +43,7 @@ Histro=[]
 for x in range (0,len(array)):
     
     for y in range (0,len(array)):
-        dist=triplets.main(array[x], array[y])
+        dist=T_dist.main(array[x], array[y])
         Histro.append(dist)
   
 

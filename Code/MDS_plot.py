@@ -17,11 +17,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pylab
 import rf_dist 
-import triplets
+import T_dist
 import pylab
-import quar_color
-import quartets_co
-import My_kenCo
+import Q_dist
+import KC_dist
 
 
 
@@ -69,7 +68,7 @@ with open("Random_200.txt") as f:
 n_samples = len(array)
 seed = np.random.RandomState(seed=2)
 
-#create a set of Gaussians in a grid of mean (-1.5,1.5) and standard devaition (0.2,5)
+
 trees=[]
 Histro=[]
 tempSim=[]
@@ -77,7 +76,7 @@ for x in range (0,len(array)):
     trees.append(str(x))
     temp=[]
     for y in range (0,len(array)):
-        dist=triplets.main(array[x], array[y])
+        dist=KC_dist.main(array[x], array[y],0)
         temp.append(dist)
         Histro.append(dist)
     tempSim.append(temp)

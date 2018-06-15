@@ -6,7 +6,7 @@ import numpy as np
 import math
 import matplotlib
 import sklearn
-import triplets
+import T_dist
 from matplotlib import pyplot as plt
 from matplotlib.collections import LineCollection
 from mpl_toolkits.mplot3d import Axes3D
@@ -140,7 +140,7 @@ tree1=[]
 tree2=[]
 dist=[]
 #Open and retrive trees in test file
-with open("trees_newick_test.txt") as f:
+with open("Random_200.txt") as f:
     for line in f:
          array.append(line.replace('\n', ''))
 
@@ -153,13 +153,11 @@ tempSim=[]
 
 
 
-# Generate distance matrix.
-
 D = scipy.zeros([len(array),len(array)])
 names=[]
 for i in range (0,len(array)):
     names.append(str(i))
     for j in range (len(array)):
-        D[i,j] = triplets.main(array[i], array[j])
-#Call main to print corresponding Heatmap
+        D[i,j] = T_dist.main(array[i], array[j])
+#Example of how to run Center tree
 main(D,"y")            
