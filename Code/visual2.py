@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'visuakls.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form_vs(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(670, 483)
+        self.Exit = QtWidgets.QPushButton(Form)
+        self.Exit.setGeometry(QtCore.QRect(570, 440, 75, 23))
+        self.Exit.setObjectName("Exit")
+        self.Save = QtWidgets.QPushButton(Form)
+        self.Save.setGeometry(QtCore.QRect(30, 440, 75, 23))
+        self.Save.setObjectName("Save")
+        self.Tabs = QtWidgets.QTabWidget(Form)
+        self.Tabs.setGeometry(QtCore.QRect(20, 10, 641, 411))
+        self.Tabs.setObjectName("Tabs")
+        self.tab_3 = QtWidgets.QWidget()
+        self.tab_3.setObjectName("tab_3")
+        self.label_dist = QtWidgets.QLabel(self.tab_3)
+        self.label_dist.setGeometry(QtCore.QRect(20, 20, 601, 341))
+        self.label_dist.setText("")
+        self.label_dist.setObjectName("label_dist")
+        pixmap = QtGui.QPixmap("LastPointCutOff.png")
+        self.label_dist.setPixmap(pixmap)
+        self.label_dist.show()
+        self.Tabs.addTab(self.tab_3, "")
+        self.HM = QtWidgets.QWidget()
+        self.HM.setObjectName("HM")
+        self.HM_ = QtWidgets.QGraphicsView(self.HM)
+        self.HM_.setGeometry(QtCore.QRect(10, 10, 611, 341))
+        self.HM_.setObjectName("HM_")
+        self.Tabs.addTab(self.HM, "")
+        self.Msd = QtWidgets.QWidget()
+        self.Msd.setObjectName("Msd")
+        self.label_2 = QtWidgets.QLabel(self.Msd)
+        self.label_2.setGeometry(QtCore.QRect(10, 360, 46, 13))
+        self.label_2.setObjectName("label_2")
+        self.RB_2D = QtWidgets.QRadioButton(self.Msd)
+        self.RB_2D.setGeometry(QtCore.QRect(50, 360, 82, 17))
+        self.RB_2D.setObjectName("RB_2D")
+        self.RB_3D = QtWidgets.QRadioButton(self.Msd)
+        self.RB_3D.setGeometry(QtCore.QRect(90, 360, 82, 17))
+        self.RB_3D.setObjectName("RB_3D")
+        self.graphicsView = QtWidgets.QGraphicsView(self.Msd)
+        self.graphicsView.setGeometry(QtCore.QRect(10, 10, 611, 341))
+        self.graphicsView.setObjectName("graphicsView")
+        self.Tabs.addTab(self.Msd, "")
+        self.TreeView = QtWidgets.QWidget()
+        self.TreeView.setObjectName("TreeView")
+        self.RB_All = QtWidgets.QRadioButton(self.TreeView)
+        self.RB_All.setGeometry(QtCore.QRect(50, 360, 82, 17))
+        self.RB_All.setObjectName("RB_All")
+        self.Rb_cluster = QtWidgets.QRadioButton(self.TreeView)
+        self.Rb_cluster.setGeometry(QtCore.QRect(90, 360, 82, 17))
+        self.Rb_cluster.setObjectName("Rb_cluster")
+        self.label = QtWidgets.QLabel(self.TreeView)
+        self.label.setGeometry(QtCore.QRect(10, 360, 46, 13))
+        self.label.setObjectName("label")
+        self.graphicsView_2 = QtWidgets.QGraphicsView(self.TreeView)
+        self.graphicsView_2.setGeometry(QtCore.QRect(10, 10, 611, 341))
+        self.graphicsView_2.setObjectName("graphicsView_2")
+        self.Tabs.addTab(self.TreeView, "")
+        self.Exit.raise_()
+        self.Save.raise_()
+        self.Tabs.raise_()
+
+        self.retranslateUi(Form)
+        self.Tabs.setCurrentIndex(3)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.Exit.setText(_translate("Form", "Exit"))
+        self.Save.setText(_translate("Form", "Save"))
+        self.Tabs.setTabText(self.Tabs.indexOf(self.tab_3), _translate("Form", "Distribution"))
+        self.Tabs.setTabText(self.Tabs.indexOf(self.HM), _translate("Form", "HeatMap"))
+        self.label_2.setText(_translate("Form", "Display:"))
+        self.RB_2D.setText(_translate("Form", "2D"))
+        self.RB_3D.setText(_translate("Form", "3D"))
+        self.Tabs.setTabText(self.Tabs.indexOf(self.Msd), _translate("Form", "MSD"))
+        self.RB_All.setText(_translate("Form", "All"))
+        self.Rb_cluster.setText(_translate("Form", "Cluster"))
+        self.label.setText(_translate("Form", "Display"))
+        self.Tabs.setTabText(self.Tabs.indexOf(self.TreeView), _translate("Form", "Tree Summary"))
+
