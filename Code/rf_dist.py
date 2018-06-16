@@ -100,7 +100,7 @@ def main(arg1,arg2):
    
     rf_dist=Num_splits1+Num_splits2-(2*Num_shared)
    
-    print(rf_dist)
+    #print(rf_dist)
     return rf_dist
    
 
