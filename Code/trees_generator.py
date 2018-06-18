@@ -8,11 +8,11 @@ import random
 def Insert_Current_Leaf(tree, C_leaf):
   yield [tree,C_leaf]
   if len(tree)== 2:
-    for left in Insert_Current_Leaf(tree[0], C_leaf):
-      new_node=[tree[1],left]
+    for node in Insert_Current_Leaf(tree[0], C_leaf):
+      new_node=[tree[1],node]
       yield new_node
-    for right in Insert_Current_Leaf(tree[1], C_leaf):
-      new_node=[right,tree[0]]
+    for node in Insert_Current_Leaf(tree[1], C_leaf):
+      new_node=[node,tree[0]]
       yield new_node
  
 def All_possible_rooted(Leaf_List):     
