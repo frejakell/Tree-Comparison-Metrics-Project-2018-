@@ -24,33 +24,23 @@ import matplotlib.pyplot as plt
 
 def main(D):
     distArray = ssd.squareform(D)
-    # Compute and plot first dendrogram.
     fig = plt.figure(figsize=(8,8))
-    ax1 = fig.add_axes([0.05,0.1,0.2,0.6])
+    ax1 = fig.add_axes([0.05,0.3,0.2,0.6])
     Y = ward(distArray)
     Z1 = sch.dendrogram(Y, orientation='left')
     ax1.set_xticks([])
     ax1.set_yticks([])
-
-    # Compute and plot second dendrogram.
-    ax2 = fig.add_axes([0.3,0.75,0.6,0.2])
-    Y = ward(distArray)
-    Z2 = sch.dendrogram(Y)
-    ax2.set_xticks([])
-    ax2.set_yticks([])
-
-    # Plot distance matrix.
-    axmatrix = fig.add_axes([0.3,0.1,0.6,0.6])
+    axmatrix = fig.add_axes([0.3,0.3,0.6,0.6])
     idx1 = Z1['leaves']
-    idx2 = Z2['leaves']
+   
     D = D[idx1,:]
-    D = D[:,idx2]
+    D = D[:,idx1]
     im = axmatrix.matshow(D, aspect='auto', origin='lower', cmap=pylab.cm.YlGnBu,vmin=0, vmax=8)
-
-
-    axcolor = fig.add_axes([0.91,0.1,0.02,0.6])
+ 
+    axcolor = fig.add_axes([0.91,0.3,0.02,0.6])
     plt.colorbar(im, cax=axcolor)
-    fig.show()
+    plt.show()
+
     
 #Example of how to run the code and obtain Heatmaps    
 array = []
