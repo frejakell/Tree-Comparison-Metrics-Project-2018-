@@ -15,14 +15,17 @@ def Insert_Current_Leaf(tree, C_leaf):
       new_node=[node,tree[0]]
       yield new_node
  
-def All_possible_rooted(Leaf_List):     
-  leaf=Leaf_List.pop()
-  if(Leaf_List):
-      for tree in All_possible_rooted(Leaf_List):
-          new_trees=Insert_Current_Leaf(tree, leaf)
-          for C_tree in new_trees:
-              yield C_tree 
-  else: yield leaf
+def All_possible_rooted(LeafNum): 
+  if LeafNum <= 0: yield 'a'
+  else:
+      Leaf_List=list(string.ascii_lowercase)[LeafNum:LeafNum+1]
+      leaf=Leaf_List[0]
+      if(Leaf_List):
+          for tree in All_possible_rooted(LeafNum-1):
+              new_trees=Insert_Current_Leaf(tree, leaf)
+              for C_tree in new_trees:
+                  yield C_tree 
+  
     
 def main(arg1=5,arg2="R"):
    
@@ -30,12 +33,10 @@ def main(arg1=5,arg2="R"):
     list1=[]
     list2=[]    
     tree_set=[]
-    leaves=list(string.ascii_lowercase)[0:arg1]
-    leaf_list=leaves
+   
     if arg2=="R" or arg2=="r":
-        for stree in All_possible_rooted((leaf_list)):
-        
-        
+        tree_struct= All_possible_rooted(arg1-1)
+        for stree in tree_struct:
             treeNewick=""
             string_tree=str(stree)
             for i in range(0,len(string_tree)) :
@@ -50,8 +51,8 @@ def main(arg1=5,arg2="R"):
            
     
     elif arg2=="U" or arg2=="u":
-        out_g=leaf_list.pop()
-        for stree in All_possible_rooted((leaf_list)):
+        out_g=list(string.ascii_lowercase)[0:arg1].pop()
+        for stree in All_possible_rooted(arg1-2):
             treeNewick=""
             string_tree=str(stree)
             for i in range(0,len(string_tree)) :
