@@ -3,7 +3,7 @@ import string
 from itertools import combinations, permutations, product
 import re
 import random
-
+import math
 
 def Insert_Current_Leaf(tree, C_leaf):
   yield [tree,C_leaf]
