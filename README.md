@@ -46,6 +46,26 @@ file will display in the Newick trees field
 When you have your trees simply select you desired metric:
 ![metric_selection](https://user-images.githubusercontent.com/8816121/114091395-7ebb6680-986d-11eb-8715-9aa81a104129.JPG)
 
+Do this by selecting the radio button that corresponds to the metric of interest.
+• if you select more then one then the program will pick whichever comes first in its code.
+• Also make sure to set Lambda if using KC metric.
+Select “ok” at the bottom of the page(next to “Reset”) when ready to compute distances.
+
+### Results page
+
+![forn](https://user-images.githubusercontent.com/8816121/114091665-ce019700-986d-11eb-8795-e3468333e21a.JPG)
+
+
+The results page contains the results of the selected distance metric in the form of a table.
+From here you can produce visuals of the data:
+For the MDS plots pick either 2D or 3D and select whether you want labels on the data points and
+colouring for the clusters.
+Select “Plot” when ready.
+A figure window(like the one shown below) will open and displayed the requested data. 
+
+![results_page](https://user-images.githubusercontent.com/8816121/114091946-2a64b680-986e-11eb-9e93-12f1c84d2e74.JPG)
+
+
 
 
 
