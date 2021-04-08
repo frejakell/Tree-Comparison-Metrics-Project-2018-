@@ -31,7 +31,8 @@ selecting the accurate radio button.
  1.d. If you selected “Store Results” then the resulting trees should appear in the Newick
 tree field. 
 
-![tree_random](https://user-images.githubusercontent.com/8816121/114091081-14a2c180-986d-11eb-8ff6-86d99bdb7eb5.JPG)
+![tree_random2](https://user-images.githubusercontent.com/8816121/114092717-0eade000-986f-11eb-9e83-294ff05795d3.JPG)
+
 
 
 
@@ -44,7 +45,8 @@ file will display in the Newick trees field
 
 ### Selecting Metric
 When you have your trees simply select you desired metric:
-![metric_selection](https://user-images.githubusercontent.com/8816121/114091395-7ebb6680-986d-11eb-8715-9aa81a104129.JPG)
+![metric_selection2](https://user-images.githubusercontent.com/8816121/114092886-4157d880-986f-11eb-86ee-d64803033c51.JPG)
+
 
 Do this by selecting the radio button that corresponds to the metric of interest.
 • if you select more then one then the program will pick whichever comes first in its code.
