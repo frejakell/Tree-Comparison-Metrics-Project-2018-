@@ -39,7 +39,7 @@ tree field.
 Use the “Find File” button to open file explorer. Then navigate and open desired file. The content of the
 file will display in the Newick trees field
 
-![trees_File](https://user-images.githubusercontent.com/8816121/114091277-52074f00-986d-11eb-8404-e41e5e3d3a00.JPG)
+![trees_File2](https://user-images.githubusercontent.com/8816121/114092553-ddcdab00-986e-11eb-8813-3a2a97bbbf28.JPG)
 
 
 ### Selecting Metric
@@ -53,7 +53,8 @@ Select “ok” at the bottom of the page(next to “Reset”) when ready to com
 
 ### Results page
 
-![forn](https://user-images.githubusercontent.com/8816121/114091665-ce019700-986d-11eb-8795-e3468333e21a.JPG)
+![form](https://user-images.githubusercontent.com/8816121/114092347-a232e100-986e-11eb-9e50-2de3403d52bb.JPG)
+
 
 
 The results page contains the results of the selected distance metric in the form of a table.
