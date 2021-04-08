@@ -19,6 +19,8 @@ If creating trees for scratch:
 1. Select mode: Full creates all trees of with the number of leaves indicated.
 1.a. If you change the Random the screen will change to let you set number of trees as
 well. 
+
+
 ![tree_intro](https://user-images.githubusercontent.com/8816121/114090870-d5747080-986c-11eb-95db-49f98a010b12.JPG)
 
  1.b. After picking mode set the number of trees and leaves you want (number of leaves
