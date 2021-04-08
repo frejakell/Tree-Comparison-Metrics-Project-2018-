@@ -81,5 +81,19 @@ Auto-Scale checkbox) or use a constant value of 8 bins (Leave it unchecked). The
 ![denogram](https://user-images.githubusercontent.com/8816121/114093183-a7dcf680-986f-11eb-88fb-e3bcc8d793c2.JPG)
 
 
+The last available feature is the Center Trees option.
+First select Cluster if you want the code to considered center trees for individual clusters as well the
+complete set. Otherwise it will only look at the total set of input trees.
+After that, select “Compute”. This will open to the Center Tree Summary page and the requested data
+should be shown in the field on the page
+
+![center_tree](https://user-images.githubusercontent.com/8816121/114093377-e4a8ed80-986f-11eb-9068-2865003ec920.JPG)
+
+
+
+If you wish to save this data:
+1. Type in output filename
+2. Select Save. 
+
 
 
