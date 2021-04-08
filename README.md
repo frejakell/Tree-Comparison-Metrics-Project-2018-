@@ -66,8 +66,19 @@ colouring for the clusters.
 Select “Plot” when ready.
 A figure window(like the one shown below) will open and displayed the requested data. 
 
-![results_page](https://user-images.githubusercontent.com/8816121/114091946-2a64b680-986e-11eb-9e93-12f1c84d2e74.JPG)
+![results_page2](https://user-images.githubusercontent.com/8816121/114093014-6ea48680-986f-11eb-8fef-9a7654318957.JPG)
 
+When done, simply close window and produce more plots if desired. 
+For the Heatmaps select include dendrogram if you wish to see a dendrogram at the side of the
+heatmap. Then simply select plot.
+
+![heatmaps](https://user-images.githubusercontent.com/8816121/114093122-972c8080-986f-11eb-8b97-ccd93480f251.JPG)
+
+
+Likewise, for the Distribution plots you can chose to let the code auto scale the histogram(select the
+Auto-Scale checkbox) or use a constant value of 8 bins (Leave it unchecked). Then select “Plot ”.
+
+![denogram](https://user-images.githubusercontent.com/8816121/114093183-a7dcf680-986f-11eb-88fb-e3bcc8d793c2.JPG)
 
 
 
