@@ -66,7 +66,8 @@ colouring for the clusters.
 Select “Plot” when ready.
 A figure window(like the one shown below) will open and displayed the requested data. 
 
-![results_page2](https://user-images.githubusercontent.com/8816121/114093014-6ea48680-986f-11eb-8fef-9a7654318957.JPG)
+![download - 2021-05-03T203348 418](https://user-images.githubusercontent.com/8816121/116958451-88a76e00-ac4f-11eb-85c1-c8d87f5a91fc.png)
+
 
 When done, simply close window and produce more plots if desired. 
 For the Heatmaps select include dendrogram if you wish to see a dendrogram at the side of the
