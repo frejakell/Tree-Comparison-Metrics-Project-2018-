@@ -13,7 +13,7 @@ To start GUI simply click the GUI.py module or type “GUI.py” into command pr
 
 
 ### Main Page 
-![main_page](https://user-images.githubusercontent.com/8816121/114090623-84647c80-986c-11eb-8914-b899f3f88dd5.JPG)
+![download - 2021-05-03T203117 678](https://user-images.githubusercontent.com/8816121/116958382-42eaa580-ac4f-11eb-9332-1f1291a203d6.png)
 
 #### If creating trees for scratch
 1. Select mode: Full creates all trees of with the number of leaves indicated.
