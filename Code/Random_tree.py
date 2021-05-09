@@ -24,37 +24,46 @@ def main( arg1,arg2,arg3):
  
     leaves=list(string.ascii_lowercase)
     leaf_list=[]
+    
     for i,j in product(leaves,leaves):
         leaf_list.append(i+j)
+        
     leaves=leaf_list[0:arg2]
     trees=[]
     n = arg2
     number_trees= arg1
+    
     if(arg3.upper()=="R"):
         for i in range(number_trees):
             leaf_list=leaves.copy()
             tree_temp=''
+            
             for s in Random_possible_trees(n):
                 tree=str(s)
            
-            for c in tree:    
+            for c in tree:  
+                
                 if c is 'l':
                     new_leaf=random.choice(leaf_list)
                     tree_temp+=new_leaf
                     leaf_list.remove(new_leaf)
+                    
                 else:
                     tree_temp+=c
+                    
             tree_temp=str(tree_temp).replace("'", "")        
             tree_temp=str(tree_temp).replace("[", "(")   
             tree_temp=str(tree_temp).replace("]", ")") 
             tree_temp=str(tree_temp)+';'  
             trees.append(tree_temp)
+            
     elif(arg3.upper()=="U"):
             out_g=leaves.pop()
+            
             for i in range(number_trees):
                 leaf_list=leaves.copy()
-                
                 tree_temp=''
+                
                 for s in Random_possible_trees(n-1):
                     tree=str(s)
                
@@ -67,6 +76,7 @@ def main( arg1,arg2,arg3):
                         
                     else:
                         tree_temp+=c
+                        
                 tree_temp=str(tree_temp).replace("'", "")        
                 tree_temp=str(tree_temp).replace("[", "(")   
                 tree_temp=str(tree_temp).replace("]", ")") 
